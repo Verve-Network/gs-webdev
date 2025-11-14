@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Verve</title>
+    <script src="/main.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <h1>The Verve</h1>
+    <h2>Cadastre-se</h2>
+    <form>
+        <label for="nome">Digite seu nome:</label>
+        <input type="text" id="nome"><br><br>
+        <label for="cpf">Digite seu CPF:</label>
+        <input minlength="11" maxlength="14" type="text" placeholder="xxx.xxx.xxx-XX" id="cpf">
+        <br><br>
+        <label for="email">Digite seu Email</label>
+        <input type="email" id="email"><br><br>
+
+        <label>Selecione seu interesse: </label><br>
+        <input id="interesse-1" type="radio" id="" name="interesse" value="interesse-1">
+        <label form="">Interesse 1</label><br>
+
+        <input id="interesse-2" type="radio" id="" name="interesse" value="interesse-2">
+        <label form="">Interesse 2</label><br>
+
+        <input id="interesse-3" type="radio" id="" name="interesse" value="interesse-3">
+        <label form="">Interesse 3</label><br>
+
+        <label>Selecione suas habilidades: </label><br>
+        <input id="habilidade-1" type="radio" id="" name="habilidades" value="habilidade-1">
+        <label form="">Habilidade 1</label><br>
+
+        <input id="habilidade-2" type="radio" id="" name="habilidades" value="habilidade-2">
+        <label form="">Habilidade 2</label><br>
+
+        <input id="habilidade-3" type="radio" id="" name="habilidades" value="habilidade-3">
+        <label form="">Habilidade 3</label><br>
+
+        <label for="nova-habilidade">Adicione habilidades:</label>
+        <input type="text" id="nova-habilidade">
+        <button type="button" onclick="adicionarHabilidade()">Adicionar</button>
+        <br><br>
+        <div id="lista-habilidades">
+
+        </div>
+        <div id="submit-button-container">
+            <button id="submit-button" type="button" onclick="validarFormulario()">Enviar</button>
+        </div>
+
+        <div id="area-feedback">
+
+        </div>
+    </form>
+</body>
+
+</html>

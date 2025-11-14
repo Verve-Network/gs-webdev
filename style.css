@@ -1,0 +1,16 @@
+body {
+    width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#submit-button-container{
+    display: flex;
+    justify-content: center;
+}
+
+#submit-button{
+    
+}
